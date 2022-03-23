@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/icong.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Poke GameBoy</title>
+  </head>
+  <body>
+    <main>
+      <div class="father-box">
+        <div class="child-box">
+          <div class="search">
+            <label for="off-p">Nostalgia
+              <input type="checkbox" name="off-p" id="off-p" onclick="powerOff();">
+            </label>
+            <input placeholder="Buscar pokemon" type="text" name="pokeName" id="pokeName" class="holder"></div>
+          <div class="screen-one">
+            <div class="container-b">
+              <div class="circle"></div>
+              <div class="circle-small"></div>
+              <div class="circle"></div>
+            </div>
+            <div class="screen-on">
+              <div class="screen-poke">
+<div class="intro" id="introVideo">
+  <video src="./assets/intro.mp4" class="videoIntro" id="videoIntro"></video>
+</div>
+              <div  class="uni" id="box-poke">  
+                <div class="img-pke">
+                  <img src="./assets/what.png" alt="ball" id="pokeImg" class="ball-poke">
+                <span id="stats" class="cha"></span>
+                </div>
+                <div class="characters">
+                    <div class="poke-cha"><span class="cha">name:</span> <span class="cha"  id="name"></span></div>
+                    <div class="poke-cha"><span class="cha">type:</span><span class="cha"  id="type"></span></div>
+                    <div class="poke-cha cha">movements:<span id="move"  class="cha"></span></div>  
+                </div>
+              </div>
+            </div>
+              
+              <img
+                src="./assets/gameboy.png"
+                alt="gameboy"
+                width="130px"
+                height="20px"
+              />
+            </div>
+            <div class="container-b">
+              <div class="circle-small"></div>
+              <div class="circle-small"></div>
+            </div>
+          </div>
+          <div class="screen-two">
+            <div class="stick">
+              <div class="stick-1"></div>
+              <div class="stick-2"></div>
+            </div>
+            <div class="power">
+              <div class="off">
+                <div class="menu">*</div>
+                <div class="led">
+                  <div class="led-2" id="on"></div>
+                  <div class="led-2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <div class="arrow">
+                <div class="arrow-2">
+                  <img src="./assets/jos.png" alt="" class="img-1" />
+                </div>
+              </div>
+              <div class="btn">
+                <div class="btn-2">
+                  <button onclick="fetchApi()" class="btn-a">B</button>
+                  <button onclick="fetchApi()" class="btn-a">A</button>
+                </div>
+              </div>
+            </div>
+            <div class="spe">
+              <img src="./assets/dos.png" alt="speack" class="spe-1" />
+            </div>
+            <div class="start-box">
+              <div class="box-btn">
+                <span class="title">SELECT</span>
+                <div class="box-btn-2">
+                  <div class="box-btn-3"></div>
+                </div>
+              </div>
+              <div class="box-btn">
+                <span class="title">START</span>
+                <div class="box-btn-2">
+                  <div class="box-btn-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <script src="./main.js"></script>
+        <audio id="sound">
+          <source type="audio/mp3" src="audio/legend.mp3">
+        </audio>
+      </footer>
+    </main>
+  </body>
+</html>
